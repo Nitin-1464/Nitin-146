@@ -10,8 +10,57 @@
 
     </head>
     <body>
+        
+        <script>
+            // program to count down numbers to 1
+        function countDown(number) {
 
-         
+     // display the number
+    console.log(number);
+
+     // decrease the number value
+     const newNumber = number - 1;
+
+
+     }
+
+      document.write(  countDown(4));
+
+
+      const getMaxCallStackSize = (i) => {
+  try {
+    return getMaxCallStackSize(++i);
+  } catch {
+    return i;
+  }
+};
+
+document.write(getMaxCallStackSize(0));
+ 
+
+let x = Math.pow(2, 3);
+
+function pow(x, n) {
+  let result = 1;
+
+  // multiply result by x n times in the loop
+  for (let i = 0; i < n; i++) {
+    result *= x;
+  }
+
+  return result;
+}
+
+alert( pow(2, 3) ); // 8
+
+
+
+
+
+        </script>
+
+          <!-- Optional JavaScript -->
+         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" 
